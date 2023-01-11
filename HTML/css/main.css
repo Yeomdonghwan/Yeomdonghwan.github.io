@@ -1,0 +1,508 @@
+@font-face {
+    font-family: '작명~~';
+    src: url()
+}
+
+div,
+input {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    transform: rotate(0.03deg)
+}
+
+
+.profile {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 16px;
+
+}
+
+
+
+#special {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.content {
+    text-align: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    box-shadow: 5px 5px coral;
+}
+
+.container {
+    width: 600px;
+    height: 800px;
+    background: #eee;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background-color: cornflowerblue;
+    display: inline-block;
+    /*    내 크기만큼 차지하는 블록*/
+    vertical-align: top;
+    /*글자를 쓸 경우 상하정렬 필요*/
+}
+
+.right {
+    width: 80%;
+    height: 400px;
+    background-color: coral;
+    display: inline-block;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    position: relative;
+
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: px;
+    text-align: center;
+}
+
+.sales {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.button {
+    margin-top: 250px;
+    color: navy;
+    background: gold;
+}
+
+.main-button {
+    padding: 15px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    z-index: 150;
+}
+
+.sub-box-content {
+    width: 50%;
+    max-width: 600px;
+    height: 30%;
+    background-color: lightgray;
+    position: relative;
+    top: -40px;
+    left: 25%;
+    text-align: center;
+    font-family: gulim;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 5;
+    box-sizing: border-box;
+
+}
+
+
+
+.headline {
+    font-size: 40px;
+    padding: 30px;
+}
+
+.w-100 {
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+
+.w-50 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+.form-background {
+    background: black;
+    padding: 30px;
+
+}
+
+.form-white {
+    background: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box
+}
+
+.w-50 {
+    float: left;
+
+}
+
+.yellowButton {
+    float: right;
+    width: 30%;
+    height: 40px;
+    background: yellow;
+    border-radius: 5px;
+    margin-right: ;
+
+}
+
+.input-field {
+    margin: 30px;
+}
+
+.form-input {
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-long {
+    height: 100px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+}
+
+.container {
+    width: 100%;
+    height: 700px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #c2d3de;
+
+}
+
+.pay-button {
+    width: 200px;
+    height: 50px;
+    background-color: navy;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+
+
+    float: right;
+    cursor: pointer;
+
+}
+
+.pay-button:hover {
+    background-color: cornflowerblue;
+}
+
+.pay-button:focus {
+    background: gray;
+    /*포커스*/
+}
+
+.pay-button:active {
+    /*누른상태일 때*/
+    background-color: brown;
+}
+
+
+.cart-table {
+    width: 100%;
+    max-width: 700px;
+    height: 200px;
+    background: white;
+    border: 2px solid gray;
+    border-collapse: separate;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.cart-table th:nth-child(2) {
+    width: 400px;
+    /* 두번쨰요소만 400픽셀로설정*/
+}
+
+tr {
+    border-collapse: collapse;
+    border-bottom: 5px solid black;
+
+}
+
+
+
+.cart-table td,
+.cart-table th {
+    border-bottom: 1px solid #c2d3de;
+    padding: 5px;
+
+}
+
+td {}
+
+.item-img {
+    width: 50px;
+
+}
+
+
+
+
+
+.input-test {
+    font-size: 20px;
+}
+
+.input-test:focus {
+    border: 3px solid red;
+}
+
+.custom-link {
+    text-decoration: none;
+
+}
+
+.custom-link:link {
+    /*방문전 링크*/
+    color: aqua;
+}
+
+.custom-link:visited {
+    color: black;
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    background: grey;
+    margin: 5px;
+}
+
+.flex-container {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.nav-logo {}
+
+.nav-menu {}
+
+
+
+.nav-container {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.menu-info-container {
+    width: 80%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.menu-info {
+
+    float: left;
+    width: 25%;
+
+}
+
+.shop-bg {
+    background: #eee;
+    padding: 20px;
+}
+
+.shop-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.shop-item {
+    width: 33%;
+    padding: 15px;
+}
+
+.shop-item img {
+    width: 100%;
+    display: block;
+}
+
+
+.menu-info-container i {
+    background: burlywood;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(.49, .69, .64, .29);
+
+    text-align: center;
+    color: white;
+
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-title {
+        font-size: 30px;
+    }
+
+    .nav-item {
+        font-size: 12px;
+    }
+
+    .menu-info {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        font-size: 10px;
+    }
+
+    .menu-info {
+        width: 100%;
+
+        background: white;
+
+    }
+
+}
+
+
+
+.overlay-popup {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+}
+
+.overlay-wrap:hover .overlay-popup {
+    top: 50%;
+}
+
+
+
+
+.overlay-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

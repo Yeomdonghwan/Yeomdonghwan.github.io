@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+.landingpage-top1 {
+    background: aqua;
+    height: 400px;
+    overflow: hidden;
+    padding: 50px;
+    position: relative;
+    padding-left: 70px;
+
+    background-image: linear-gradient(to bottom, #4997DC, #4E61C0);
+
+    color: aliceblue;
+}
+
+
+.landingpage-top1 img {
+    width: 40%;
+    max-width: 300px;
+
+    float: right;
+    margin-right: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+}
+
+.button-reg {
+    background: #444445;
+    padding: 10px;
+    border-radius: 5px;
+    color: aliceblue;
+    border: 0px;
+}
+
+.main-container {
+    transform: rotate(-0.04deg);
+}
+
+.landingpage-top2 {
+    height: auto;
+    margin: 30px;
+    text-align: center;
+}
+
+.landingpage-top3 {
+    padding: 30px;
+    text-align: center;
+    background: #4E61C0;
+    color: aliceblue;
+    height: 500px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.landingpage-top3-item {
+    float: left;
+    width: 25%;
+}
+
+.landingpage-top3-item i {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background: white;
+    color: #4E61C0;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    font-size: 200%;
+}
+
+.landingpage-top4 {
+    height: 600px;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.landingpage-top4-item {
+    float: left;
+    width: 50%;
+    height: 50%;
+    transition: all 1s;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+    color: aliceblue;
+
+    box-sizing: border-box;
+
+}
+
+.landingpage-top4-item:hover {}
+
+.landingpage-top4-item img {
+    width: 100%;
+    display: block;
+}
+
+.landingpage-top4-imageContainer {
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.background-img1 {
+    background-image: url("../img/portfolio-1.jpg");
+}
+
+.background-img2 {
+
+    background-image: url(../img/portfolio-2.jpg);
+}
+
+.background-img3 {
+
+    background-image: url(../img/portfolio-3.jpg);
+}
+
+.background-img4 {
+
+    background-image: url(../img/portfolio-4.jpg);
+}
+
+.white-box {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    position: absolute;
+    border: white;
+
+}
+
+.white-box:hover {
+    border: 20px solid white;
+}
+
+.landingpage-top4-item-text {
+    padding: 20px;
+}
+
+.footer {
+    height: 250px;
+    padding: 30px;
+    text-align: center;
+    top: 150px;
+}
+
+.footer i {
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background: #4E61C0;
+    padding-top: 10px;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    .landingpage-top1 {
+
+        text-align: center;
+    }
+
+    .landingpage-top1 img {
+       left: 39%;
+        width: 30%;
+        max-width: 180px;
+    }
+
+}

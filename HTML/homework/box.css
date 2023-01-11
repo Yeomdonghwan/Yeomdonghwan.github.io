@@ -1,0 +1,100 @@
+
+.left {
+    width: 70%;
+    height: 100%;
+    background-color: bisque;
+    float: left;
+}
+
+.container {
+    width:800px;
+    height: 400px;
+    background-color: #eee;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.right {
+    width: 30%;
+    height:100%;
+    background-color: chocolate;
+    float: left;
+    border-radius: 15px;
+}
+
+.container {
+    
+}
+
+.title {
+    background-color:aquamarine;
+    width:100%;
+    height: 30%;
+    border-radius: 15px;
+}
+
+.content {
+    background-color:azure;
+    width: 100%;
+    height: 70%;
+}
+
+.blog_content {
+/*    background-color: red;*/
+    width:70%;
+    height: 100%;
+    float: left;
+}
+
+.blog_image {
+    background-color: blue;
+    width: 30%;
+    height: 100%;
+    float:left;
+}
+
+.writer_info {
+/*    background-color: black;*/
+    width:100%;
+    height: 30%;
+    
+}
+
+.preview {
+    width:100%;
+    height:70%;
+    background-color: red;
+    
+}
+
+.blog-content {
+    width:80%;
+    height: 400px;
+    background-color: aliceblue;
+    float: left;
+}
+
+.blog-img {
+    width: 20%;
+    height: 400px;
+    background-color: red;
+    float:left;
+}
+
+.blog-name {
+    float:left;
+}
+
+.navbar li {
+    display:inline-block;
+    width:60px;
+    text-align: center;
+    background: #eee;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.navbar a{
+    font-size: 16px;
+    text-decoration: none;
+}
