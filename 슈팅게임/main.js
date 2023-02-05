@@ -1,12 +1,12 @@
-let canvas;
+let game_canvas;
 let ctx;
 
-canvas = document.createElement("canvas"); //canvas생성
-ctx = canvas.getContext("2d");
+game_canvas = document.createElement("canvas"); //canvas생성
+ctx = game_canvas.getContext("2d");
 
-canvas.width = 400;
-canvas.height = 700;
-document.body.appendChild(canvas);
+game_canvas.width = 400;
+game_canvas.height = 700;
+document.body.appendChild(game_canvas);
 
 let backgroundImage, spaceshipImage, bulletImage, enemyImage, gameOverImage;
 
@@ -14,8 +14,8 @@ let gameOver = false; //게임오버 여부
 let score = 0;
 
 //우주선 좌표
-let spaceshipX = canvas.width / 2 - 32;
-let spaceshipY = canvas.height - 64;
+let spaceshipX = game_canvas.width / 2 - 32;
+let spaceshipY = game_canvas.height - 64;
 
 
 let bulletList = []; //총알리스트
@@ -68,12 +68,12 @@ function Enemy() {
     this.x = 0;
     this.y = 0;
     this.init = function () {
-        this.x = generateRandomValue(0, canvas.width - 48);
+        this.x = generateRandomValue(0, game_canvas.width - 48);
         enemyList.push(this);
     }
     this.update = function () {
         this.y += level;
-        if (this.y > canvas.height - 48) {
+        if (this.y > game_canvas.height - 48) {
             gameOver = true;
         }
     }
@@ -139,8 +139,8 @@ function update() {
     if (spaceshipX < 0) {
         spaceshipX = 0;
     }
-    if (spaceshipX > canvas.width - 64) {
-        spaceshipX = canvas.width - 64;
+    if (spaceshipX > game_canvas.width - 64) {
+        spaceshipX = game_canvas.width - 64;
     }
 
     for (let i = 0; i < bulletList.length; i++) {
@@ -159,7 +159,7 @@ function update() {
 function render() {
     //ctx가 이미지를 그림
 
-    ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+    ctx.drawImage(backgroundImage, 0, 0, game_canvas.width, game_canvas.height);
 
     ctx.font = "20px sans-serif";
     ctx.fillText(`Score: ${score}`, 20, 600);
