@@ -58,6 +58,7 @@ let level = 2;
 function setLevel() {
     document.querySelectorAll('#level')[0].addEventListener('input', function (e) {
         level = parseInt(this.value);
+        createEnemy();
         main();
     });
 }
@@ -195,5 +196,5 @@ function main() {
 loadImage();
 setLevel();
 setupKeyboardListener();
-createEnemy();
+//createEnemy();
 //main();
