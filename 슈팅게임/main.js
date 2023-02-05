@@ -53,7 +53,7 @@ function generateRandomValue(min, max) {
 
 let enemyList = [];
 
-let level = 2;
+let level = 5;
 
 function setLevel() {
     document.querySelectorAll('#level')[0].addEventListener('input', function (e) {
