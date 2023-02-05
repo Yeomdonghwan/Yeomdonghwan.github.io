@@ -187,6 +187,7 @@ function main() {
 
     } else {
         ctx.drawImage(gameOverImage, 10, 100, 380, 380);
+        ctx.fillText(`당신의 점수: ${score}`,200,350);
     }
 
 
