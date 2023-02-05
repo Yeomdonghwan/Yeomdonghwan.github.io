@@ -36,7 +36,7 @@ function Bullet() {
     this.checkHit = function () {
 
         for (let i = 0; i < enemyList.length; i++) {
-            if (this.y <= enemyList[i].y && this.x >= enemyList[i].x-20 && this.x <= enemyList[i].x + 40) {
+            if (this.y <= enemyList[i].y && this.x >= enemyList[i].x - 20 && this.x <= enemyList[i].x + 40) {
                 score++;
                 this.alive = false;
                 enemyList.splice(i, 1);
@@ -53,6 +53,15 @@ function generateRandomValue(min, max) {
 
 let enemyList = [];
 
+let level = 2;
+
+function setLevel() {
+    document.querySelectorAll('#level')[0].addEventListener('input', function (e) {
+        level = parseInt(this.value);
+        main();
+    });
+}
+
 function Enemy() {
     //Enemy Class
     this.x = 0;
@@ -62,7 +71,7 @@ function Enemy() {
         enemyList.push(this);
     }
     this.update = function () {
-        this.y += 2;
+        this.y += level;
         if (this.y > canvas.height - 48) {
             gameOver = true;
         }
@@ -151,7 +160,7 @@ function render() {
 
     ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
 
-    ctx.font="20px sans-serif";
+    ctx.font = "20px sans-serif";
     ctx.fillText(`Score: ${score}`, 20, 600);
     ctx.fillStyle = "white";
 
@@ -183,6 +192,7 @@ function main() {
 
 }
 loadImage();
+setLevel();
 setupKeyboardListener();
 createEnemy();
-main();
+//main();
