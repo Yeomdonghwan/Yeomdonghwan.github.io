@@ -3,7 +3,7 @@ body{
 }
 .chat-content {
     width: 100vw;
-    height: 90vh;
+    height: 92vh;
     overflow-y: scroll;
     background: black;;
     position: relative;
@@ -90,6 +90,7 @@ body{
 }
 
 .input-section {
+    height: 8vh;
     padding: 10px;
     display: flex;
     background: #2C2C2E;
