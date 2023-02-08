@@ -1,0 +1,149 @@
+body{
+    transform:rotate(-0.03deg);
+}
+.chat-content {
+    width: 100vw;
+    height: 92vh;
+    overflow-y: scroll;
+    background: black;;
+    position: relative;
+    z-index: 0;
+    
+}
+
+.line {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.chat-box {
+    background: #eee;
+    padding: 8px;
+    max-width: 300px;
+    border-radius: 5px;
+    background: #26252A;
+    color: white;
+}
+
+.mine {
+    margin-left: auto;
+    margin-right: 15px;
+    background: #6AD06A;
+}
+
+.input-box {
+    width: 85%;
+    border-radius: 8px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: 1px solid grey;
+    
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+.name {
+    display: block;
+}
+
+.text {
+    display: block;
+}
+
+.top-bg {
+    
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: (0,0,0,0.5);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-top: 20px;
+    filter: 
+}
+
+.container {
+    overflow: hidden;
+}
+
+.container {
+    
+}
+
+.emptybox {
+    height: 80px;
+}
+
+.btn {
+    white-space: nowrap;
+}
+
+.input-section {
+    height: 8vh;
+    padding: 10px;
+    display: flex;
+    background: #2C2C2E;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+
+
+.bg-grey {
+    background: grey;
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.chat-content::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+.chat-content::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #7F7F7F; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+.chat-content::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+
+.modal {
+    z-index: 5;
+}
+
+
+
+.bg-blur{
+    background-color:(0,0,0,0.5);
+    position: fixed;
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    z-index: 5;
+    text-align: center;
+    padding: 30px;
+}
+
+.hidden {
+    display: none;
+}
