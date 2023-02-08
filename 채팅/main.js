@@ -17,7 +17,7 @@
         $('.chat-content').scrollTop($('.chat-content').prop('scrollHeight'));
 
         const configuration = new Configuration({
-            apiKey: ${secret.SECRET_KEY},
+            apiKey: ${{secret.SECRET_KEY}},
         });
         const openai = new OpenAIApi(configuration);
 
