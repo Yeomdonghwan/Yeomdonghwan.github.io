@@ -17,7 +17,7 @@
         $('.chat-content').scrollTop($('.chat-content').prop('scrollHeight'));
 
         const configuration = new Configuration({
-            apiKey: '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',
+            apiKey: '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',
         });
         const openai = new OpenAIApi(configuration);
 
