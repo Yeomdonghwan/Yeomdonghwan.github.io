@@ -1,5 +1,5 @@
 const API_KEY=config.KEY;
-
+//뭐지?
 
 import {
         Configuration,
